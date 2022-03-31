@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Charli's First Website -->
+    <title>Charli's First Website</title>
+    <!-- Charli's first website and Instagram account -->
+    <meta name="author" content="Charli">
+    <meta name="description" content="A simple website that links to Charli's plant Instagram account">
+    <meta name="keywords" content="First website practice, Instagram, ITNW Course, plant-encyclopedia">
+</head>
+
+<style>
+    a {
+        font-weight: 700;
+        /* text-decoration: none; */
+        color: rgb(30, 204, 175);
+    }
+
+    a:hover {
+        color: rgb(46, 156, 184)
+    }
+
+    body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+    }
+
+    section {
+        /* I learned this trick from: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    header {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+</style>
+
+<body>
+    <!-- Grid system https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+    <main>
+        <!-- HTML5 tags: https://www.tutorialrepublic.com/html-reference/html5-tags.php -->
+        <header>
+            <nav>
+                <a href="https://www.instagram.com/bleuuming/">My Plant Instagram</a>
+                <a href="https://www.plantsnap.com/plant-encyclopedia/">Plant Encyclopedia</a>
+            </nav>
+        </header>
+        <section>
+            <h1>Plants Make Me Happy</h1>
+        </section>
+        
+        <img src="./plants.jpg" alt="picture of plants">
+    </main>
+</body>
+
+</html>
